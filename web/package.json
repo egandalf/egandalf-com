@@ -1,0 +1,33 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && npx pagefind --site .next/server/app --output-path public/pagefind",
+    "start": "next start",
+    "lint": "eslint",
+    "postbuild": "npx pagefind --site .next/server/app --output-path public/pagefind"
+  },
+  "dependencies": {
+    "@fontsource/opendyslexic": "^5.2.5",
+    "@portabletext/react": "^6.0.2",
+    "@sanity/client": "^7.14.1",
+    "@sanity/image-url": "^2.0.3",
+    "next": "16.1.6",
+    "next-sanity": "^12.0.16",
+    "react": "19.2.3",
+    "react-dom": "19.2.3"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "16.1.6",
+    "pagefind": "^1.4.0",
+    "tailwindcss": "^4",
+    "typescript": "^5"
+  }
+}
